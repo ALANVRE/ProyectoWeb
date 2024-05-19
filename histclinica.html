@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registro de Historias Clínicas</title>
+    <link rel="stylesheet" href="estilohistcli.css">
+  </head>
+  <body>
+    <main>
+    <form >
+
+
+      <h1>Registro</h1>
+      
+      <label for="nombre">Nombres:</label><br>
+      <input type="text" id="nombre" name="nombre" ><br><br>
+      
+      <label for="apellido">Apellidos:</label><br>
+      <input type="text" id="apellido" name="apellido" ><br><br>
+
+      <label for="type">Cédula:</label><br>
+      <input type="number" id="cedula" name="cedula" ><br><br>
+
+      <label for="Edad">Edad:</label><br>
+      <input type="number" id="edad" name="edad" ><br><br>
+      
+      <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" ><br><br>
+      
+      <label for="genero">Género:</label><br>
+      <input type="radio" id="masculino" name="genero" value="masculino" >
+      <label for="masculino">Masculino</label><br>
+      <input type="radio" id="femenino" name="genero" value="femenino" >
+      <label for="femenino">Femenino</label><br><br>
+      
+
+
+      <label for="direccion">Dirección:</label><br>
+      <input type="text" id="direccion" name="direccion" ><br><br>
+      
+      <label for="telefono">Teléfono:</label><br>
+      <input type="tel" id="telefono" name="telefono" ><br><br>
+      
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" ><br><br>
+
+
+
+      <label for="type">Tipo de sangre:</label><br>
+      <input type="text" id="tiposangre" name="Tipo de sangre" ><br><br>
+
+      <label for="type">Alergias:</label><br>
+      <input type="text" id="alergia" name="alergias" ><br><br>
+
+      <label for="type">Enfermedades:</label><br>
+      <input type="text" id="enfermedades" name="enfermedades" ><br><br>
+      
+      <label for="type">N° Historial clínico:</label><br>
+      <input type="number" id="historial" name="historial" placeholder="ingrese un número de historial clínico"><br><br>
+      
+      <input type="button" value="Registrarse"  onclick="validar()" >
+      <input type="button" value="Regresar a la pagina de inicio"  onclick="regreso()" >
+    </form>
+  </main>
+  <script src="validarhistcli.js"></script>
+  </body>
+</html>

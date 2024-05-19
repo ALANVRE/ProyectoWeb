@@ -1,0 +1,179 @@
+
+:root {
+    --max-width: 1280px;
+    --min-width: 320px;
+    --accent-color: #000000;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html,body {
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    background-image: url(policlinico.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    font-family: Roboto, sans-serif;
+  }
+  
+  a {
+    color: rgb(0, 0, 0);
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    transition: color 0.3s; /* Agrega una transición suave de color al pasar el mouse */
+}
+
+a:hover {
+    color: rgb(46, 13, 13); /* Cambia el color al pasar el mouse */
+}
+
+  
+  /* Container */
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: var(--min-width);
+  }
+  
+  .header,
+  .content,
+  .footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: var(--max-width);
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    width: 8000px;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 500%;
+    font-weight: bold;
+  }
+  
+  .logo__img {
+    margin-right: 1.5rem;
+  }
+  
+  .menu-list {
+    margin: 0;
+  
+  }
+  
+  .menu-list__item {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size: 24px;
+    color: black;
+    
+  }
+  
+  .menu-list__item:last-child {
+    margin-right: 0;
+  }
+
+  
+
+  .content {
+    max-width: var(--max-width);
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position:relative;
+  }
+
+  .slideButton {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .prevSlide {
+    left: -2rem;
+  }
+  
+  .nextSlide {
+    right: -2rem;
+  }
+  
+  .content__claim {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    position: relative;
+  }
+  
+  .content__subclaim {
+    font-size: 36px;
+    margin: 0.5rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  /* Footer */
+  .footer-wrapper {
+    background-color: rgb(107, 202, 240,0.5);
+    
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__widget {
+    font-size: 18px;
+  }
+  
+  .footer__widget__title {
+    color: var(--accent-color);
+    margin: 0 0 1rem 0;
+  }
+  
+  .footer__widget__text {
+    margin: 0;
+  }
+  
+
+  @media screen and (max-width: 1280px) {
+    .header,
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu {
+      margin-top: 1.5rem;
+    }
+  
+    .content {
+      align-items:center;
+    }
+  
+    .footer__widget {
+      margin-bottom: 1rem;
+    }
+  }
+  
